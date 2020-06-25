@@ -13,7 +13,7 @@ const helpBtn =document.getElementById("helpBtn");
 function displayHelp(){
 alert("Click the brush icon for Hex table code")
 }
-helpBtn.addEventListener('click', displayHelp);
+
 /* reset grid function */
 resetBtn.addEventListener('click', e => {
     let cells = container.childNodes;
