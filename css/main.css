@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(
+        115deg,
+        rgba(22, 22, 43, 0.767),
+        rgba(34, 34, 51, 0.726)
+      ),
+      url(/images/mountain.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#container{
+    display:grid;
+    margin: 10px auto;
+    background-color:whitesmoke;
+    width: 900px;
+    height: 900px;
+    user-select:none;
+    border: 8px ridge gray;
+    cursor: crosshair;
+}
+#buttons{
+    text-align:center;
+    margin: 10px auto;
+}
+#reset{
+    text-align: center;
+}
+#resetBtn{
+    margin-bottom: 5px;
+    padding: 8px 0 8px 0;
+    width: 96px;
+    cursor: pointer;
+}
+#setGrid, #setColor, #setRandomColor, #setCanvas{
+    padding: 8px 10px 8px 10px;
+    cursor:pointer;
+    margin-right: 12px;
+}
+#setGrid, #setColor, #setRandomColor, #setCanvas,#resetBtn{
+    font-family: 'Piedra', cursive;
+    background: darkblue;
+    color: white;
+    border: 2px outset darkblue;
+    outline: none;
+    border-radius: 10px;
+}
+#setGrid:hover, #setColor:hover, #setRandomColor:hover, #setCanvas:hover ,#resetBtn:hover{
+    background: darkgreen;
+    border: 2px outset darkgreen;
+    outline:none;
+}
+
+/* icons css*/
+.colorLink{
+    border: 1.5px outset whitesmoke;
+    padding: 7px 5px 7px 5px;
+    border-radius: 7px;
+    background:black;
+}
+.colorLink a{
+    color: #eb8907;
+}
+
+.helpBtn{
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1.5px outset whitesmoke;
+    border-radius: 7px;
+    padding: 7px 6px 7px 6px;
+    background: black;
+}
+.helpIcon{
+    color: #eb8907;
+}
+.colorLink:hover, .helpBtn:hover{
+    border: 2px outset whitesmoke;
+}
+
+
+/* make it responsive */
+@media(max-height: 1000px){
+    #container{
+        display:grid;
+        margin:10px auto;
+        background-color: whitesmoke;
+        width: 950px;
+        height: 950px;
+    }
+}
+@media (max-height: 950px){
+    #container{
+        display: grid;
+        margin:10px auto;
+        background-color: gray;
+        width: 800px;
+        height: 800px;
+    }
+}
+@media (max-height: 850px){
+    #container{
+        display: grid;
+        margin: 10px auto;
+        background-color: white;
+        width: 700px;
+        height: 700px;
+    }
+}
+@media (max-height: 750px){
+    #container{
+        display: grid;
+        margin: 10px auto;
+        background-color: white;
+        width: 600px;
+        height: 600px;
+    }
+}

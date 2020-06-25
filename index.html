@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Etch A Sketch</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piedra&display=swap">
+        <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+    </head>
+    <body>
+        <div id="buttons">
+            <button id="setGrid">Set Size</button>
+            <button id="setColor">Brush Color</button>
+            <button id="setCanvas">Canvas Color</button>
+            <button id="setRandomColor">Randomize Color</button>
+            <span class="colorLink"><a href="https://www.w3schools.com/colors/colors_hexadecimal.asp"><i class="fa fa-paint-brush fa-lg"></i></a></span>
+            <button onclick="displayHelp()" class="helpBtn"><span class="helpIcon"><i class="fa fa-question-circle fa-lg"></i></span></button>
+            
+        </div>
+        <div id="container">
+
+        </div>
+        <div id="reset">
+            <button id="resetBtn">Reset Canvas</button>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
